@@ -2,99 +2,147 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AutoScale – John Bland Tools</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #222;
+    }
+
+    header {
+      background-color: #00468b;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #003860;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1.2rem;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
       max-width: 850px;
       margin: 2rem auto;
-      padding: 2rem;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
+      padding: 0 2rem;
     }
-    h1, h2, h3 {
-      color: #1c1c1c;
+
+    h2 {
+      margin-top: 2rem;
+      color: #00468b;
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
+
     code {
-      background-color: #eee;
+      background: #eee;
       padding: 0.2em 0.4em;
-      border-radius: 3px;
-      font-family: monospace;
+      border-radius: 4px;
     }
-    pre {
-      background-color: #eee;
-      padding: 1em;
+
+    ul, ol {
+      padding-left: 1.4rem;
+    }
+
+    .cta {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #e8f0ff;
+      border: 1px solid #ccddee;
       border-radius: 5px;
-      overflow-x: auto;
     }
-    .header {
+
+    footer {
       text-align: center;
-      margin-bottom: 3rem;
+      font-size: 0.9rem;
+      color: #888;
+      padding: 2rem 0;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #0066cc;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background-color: #004fa3;
     }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <h1>AutoScale</h1>
-    <p><strong>by John Bland Tools</strong></p>
-    <p><a href="mailto:johnblandtools@gmail.com">johnblandtools@gmail.com</a></p>
+<header>
+  <h1>AutoScale</h1>
+  <p>by John Bland Tools</p>
+</header>
+
+<nav>
+  <a href="/">Home</a>
+  <a href="/license.html">License</a>
+  <a href="/support.html">Support</a>
+  <a href="/tools.html">Tools</a>
+</nav>
+
+<div class="container">
+
+  <div class="cta">
+    <h2>Download AutoScale</h2>
+    <p>Ready to get started? Download the AutoScale installer below:</p>
+    <a href="/downloads/AutoScaleInstaller.zip" class="button">Download Installer</a>
+    <p><small>Includes a 30-day free trial. Compatible with Rhino 7 & 8.</small></p>
   </div>
 
-  <h2>🚀 What is AutoScale?</h2>
-  <p>
-    AutoScale is a licensed Rhino tool for accurately scaling geometry by layer, with optional annotations,
-    bounding boxes, and dimensional references.
-  </p>
+  <h2>What is AutoScale?</h2>
+  <p>AutoScale is a Rhino tool for precision scaling based on layer names, with automatic dimension lines, bounding boxes, and annotations.</p>
+
   <ul>
-    <li>Supports Rhino 7 and Rhino 8 (CPython)</li>
-    <li>Precision scaling by factor (e.g. 0.995)</li>
-    <li>Works with user-specified layers like <code>canvas</code>, <code>seams zips</code>, <code>annotations</code></li>
-    <li>Outputs clean geometry and annotations on organized layers</li>
-    <li>Includes licensing logic with 30-day free trial</li>
+    <li>Scale selected geometry based on layers like <code>canvas</code>, <code>seams zips</code>, and <code>annotations</code></li>
+    <li>Automatically add a reference line and scale label</li>
+    <li>Move scaled geometry to new layers like <code>scale canvas</code></li>
+    <li>Includes license enforcement and grouping options</li>
   </ul>
 
-  <h2>🛠 Installation</h2>
+  <h2>Installation</h2>
   <ol>
-    <li>Download the AutoScale installer package</li>
-    <li>Run <code>install.bat</code> to install scripts into Rhino's internal script folder</li>
-    <li>Open Rhino and load the toolbar:  
-      <br><code>Tools > Toolbar Layout > File > Open > JB Tools.rui</code>
-    </li>
-    <li>Click the <strong>“AutoScale”</strong> button or run:<br><code>_RunPythonScript "AutoScale_Run.py"</code></li>
+    <li>Download and unzip the AutoScale package</li>
+    <li>Run <code>install.bat</code> to install it to Rhino’s scripts folder</li>
+    <li>Open Rhino and load the <code>JB Tools.rui</code> toolbar</li>
+    <li>Click the AutoScale button, or run:<br><code>_RunPythonScript "AutoScale_Run.py"</code></li>
   </ol>
 
-  <h2>🔐 Licensing</h2>
-  <p>
-    AutoScale comes with a <strong>30-day free trial</strong>. After that, activation is required.  
-    Licensing is handled locally using compiled modules.
-  </p>
-  <p>
-    Contact <a href="mailto:johnblandtools@gmail.com">johnblandtools@gmail.com</a> for license setup and purchase options.
-  </p>
+  <h2>Licensing</h2>
+  <p>AutoScale includes a <strong>30-day free trial</strong>. After the trial period, a valid license is required.</p>
+  <p>Licensing is handled locally with optional future support for cloud activation.</p>
 
-  <h2>📂 What’s Included</h2>
-  <ul>
-    <li><code>AutoScale_Run.py</code> – Launch script</li>
-    <li><code>AutoScale.pyc</code> – Compiled protected script</li>
-    <li><code>license_checker.pyc</code> – License logic</li>
-    <li><code>install.bat</code> – Installer for Rhino</li>
-    <li><code>JB Tools.rui</code> – Toolbar for easy access</li>
-  </ul>
+  <h2>Support</h2>
+  <p>Need help activating or installing AutoScale? Reach out via email:</p>
+  <p><strong>Email:</strong> <a href="mailto:johnblandtools@gmail.com">johnblandtools@gmail.com</a></p>
 
-  <h2>📩 Support & Contact</h2>
-  <p>
-    For support, licensing help, or feedback, email:  
-    <a href="mailto:johnblandtools@gmail.com">johnblandtools@gmail.com</a>
-  </p>
+</div>
 
-  <p>— John Bland Tools</p>
+<footer>
+  &copy; 2025 John Bland Tools – All rights reserved.
+</footer>
 
 </body>
 </html>
