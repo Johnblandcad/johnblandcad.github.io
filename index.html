@@ -4,94 +4,12 @@
   <meta charset="UTF-8" />
   <title>AutoScale – John Bland Tools</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f7fa;
-      color: #222;
-    }
-
-    header {
-      background-color: #00468b;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #003860;
-      padding: 0.5rem;
-      text-align: center;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 1.2rem;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      max-width: 850px;
-      margin: 2rem auto;
-      padding: 0 2rem;
-    }
-
-    h2 {
-      margin-top: 2rem;
-      color: #00468b;
-    }
-
-    code {
-      background: #eee;
-      padding: 0.2em 0.4em;
-      border-radius: 4px;
-    }
-
-    ul, ol {
-      padding-left: 1.4rem;
-    }
-
-    .cta {
-      margin-top: 2rem;
-      padding: 1rem;
-      background: #e8f0ff;
-      border: 1px solid #ccddee;
-      border-radius: 5px;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #888;
-      padding: 2rem 0;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
-      background: #0066cc;
-      color: white;
-      border-radius: 4px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .button:hover {
-      background-color: #004fa3;
-    }
-  </style>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
 
-<header>
+<header style="text-align:center; padding: 2rem 0;">
+  <img src="/logo.svg" alt="JB Tools Logo" style="height: 50px; margin-bottom: 1rem;" />
   <h1>AutoScale</h1>
   <p>by John Bland Tools</p>
 </header>
@@ -116,27 +34,22 @@
   <p>AutoScale is a Rhino tool for precision scaling based on layer names, with automatic dimension lines, bounding boxes, and annotations.</p>
 
   <ul>
-    <li>Scale selected geometry based on layers like <code>canvas</code>, <code>seams zips</code>, and <code>annotations</code></li>
-    <li>Automatically add a reference line and scale label</li>
-    <li>Move scaled geometry to new layers like <code>scale canvas</code></li>
-    <li>Includes license enforcement and grouping options</li>
+    <li>Scale geometry based on layers like <code>canvas</code>, <code>seams zips</code>, <code>annotations</code></li>
+    <li>Adds bounding boxes, dimensions, and labels</li>
+    <li>Supports grouping and scaled layer output</li>
   </ul>
 
   <h2>Installation</h2>
   <ol>
     <li>Download and unzip the AutoScale package</li>
-    <li>Run <code>install.bat</code> to install it to Rhino’s scripts folder</li>
-    <li>Open Rhino and load the <code>JB Tools.rui</code> toolbar</li>
-    <li>Click the AutoScale button, or run:<br><code>_RunPythonScript "AutoScale_Run.py"</code></li>
+    <li>Run <code>install.bat</code></li>
+    <li>Load the toolbar in Rhino</li>
+    <li>Click the AutoScale button or run:<br><code>_RunPythonScript "AutoScale_Run.py"</code></li>
   </ol>
 
   <h2>Licensing</h2>
-  <p>AutoScale includes a <strong>30-day free trial</strong>. After the trial period, a valid license is required.</p>
-  <p>Licensing is handled locally with optional future support for cloud activation.</p>
-
-  <h2>Support</h2>
-  <p>Need help activating or installing AutoScale? Reach out via email:</p>
-  <p><strong>Email:</strong> <a href="mailto:johnblandtools@gmail.com">johnblandtools@gmail.com</a></p>
+  <p>A 30-day free trial is included. After the trial, activation is required using a license key.</p>
+  <p>Licensing is handled locally, no internet required.</p>
 
 </div>
 
