@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>AutoScale</title>
-  </head>
-  <body>
-    <h1>✅ AutoScale site is working</h1>
-    <p>This is the official landing page for John Bland Tools.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AutoScale – John Bland Tools</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      max-width: 850px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #1c1c1c;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    code {
+      background-color: #eee;
+      padding: 0.2em 0.4em;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+    pre {
+      background-color: #eee;
+      padding: 1em;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>AutoScale</h1>
+    <p><strong>by John Bland Tools</strong></p>
+    <p><a href="mailto:johnblandtools@gmail.com">johnblandtools@gmail.com</a></p>
+  </div>
+
+  <h2>🚀 What is AutoScale?</h2>
+  <p>
+    AutoScale is a licensed Rhino tool for accurately scaling geometry by layer, with optional annotations,
+    bounding boxes, and dimensional references.
+  </p>
+  <ul>
+    <li>Supports Rhino 7 and Rhino 8 (CPython)</li>
+    <li>Precision scaling by factor (e.g. 0.995)</li>
+    <li>Works with user-specified layers like <code>canvas</code>, <code>seams zips</code>, <code>annotations</code></li>
+    <li>Outputs clean geometry and annotations on organized layers</li>
+    <li>Includes licensing logic with 30-day free trial</li>
+  </ul>
+
+  <h2>🛠 Installation</h2>
+  <ol>
+    <li>Download the AutoScale installer package</li>
+    <li>Run <code>install.bat</code> to install scripts into Rhino's internal script folder</li>
+    <li>Open Rhino and load the toolbar:  
+      <br><code>Tools > Toolbar Layout > File > Open > JB Tools.rui</code>
+    </li>
+    <li>Click the <strong>“AutoScale”</strong> button or run:<br><code>_RunPythonScript "AutoScale_Run.py"</code></li>
+  </ol>
+
+  <h2>🔐 Licensing</h2>
+  <p>
+    AutoScale comes with a <strong>30-day free trial</strong>. After that, activation is required.  
+    Licensing is handled locally using compiled modules.
+  </p>
+  <p>
+    Contact <a href="mailto:johnblandtools@gmail.com">johnblandtools@gmail.com</a> for license setup and purchase options.
+  </p>
+
+  <h2>📂 What’s Included</h2>
+  <ul>
+    <li><code>AutoScale_Run.py</code> – Launch script</li>
+    <li><code>AutoScale.pyc</code> – Compiled protected script</li>
+    <li><code>license_checker.pyc</code> – License logic</li>
+    <li><code>install.bat</code> – Installer for Rhino</li>
+    <li><code>JB Tools.rui</code> – Toolbar for easy access</li>
+  </ul>
+
+  <h2>📩 Support & Contact</h2>
+  <p>
+    For support, licensing help, or feedback, email:  
+    <a href="mailto:johnblandtools@gmail.com">johnblandtools@gmail.com</a>
+  </p>
+
+  <p>— John Bland Tools</p>
+
+</body>
 </html>
